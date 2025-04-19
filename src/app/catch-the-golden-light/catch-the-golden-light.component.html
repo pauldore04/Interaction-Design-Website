@@ -1,0 +1,58 @@
+<div class="container">
+  <header>
+    <h1 [routerLink]="['/']" class="site-title">Interaction Design</h1>
+  </header>
+
+  <main class="content">
+    <h2>Blink Sketch</h2>
+    <div class="text-content">
+      <p>Using only an ESP32 Microcontroller, an LED, a Button, a Breadboard, some Jumper Cables and your individual Code,
+        your group should create an interesting / fun / engaging interactive system</p>
+      <p>Group: Frithjof Plath, Jakob Grote, Madina Begmatova, Paul Doré</p>
+    </div>
+    <h3>Documentation</h3>
+    <div class="text-content">
+      <p>Our first concept was to create a multiplayer game where players would press the button as many times as possible within a specific time frame. The player who achieved more button presses would win. The LED would provide feedback by blinking once if Player 1 won or twice if Player 2 won.</p>
+
+      <p>We explored alternative ideas, such as:</p>
+      <ul>
+        <li>A timing challenge where users would have to estimate a specific number of seconds accurately. We identified potential issues with providing clear user feedback and explaining the concept.</li>
+        <li>A drinking game where participants would compete to finish a beer faster. Players would press the button at the start and again when finished.</li>
+      </ul>
+
+      <p>We ultimately decided on creating a game called "Catch the Golden Light." In this game:</p>
+      <ul>
+        <li>The LED cycles through various colors</li>
+        <li>Occasionally, with a certain probability, the LED would display gold</li>
+        <li>The user must press the button at the exact moment the gold color appears to win</li>
+        <li>If pressed at the wrong time, the LED flashes red</li>
+        <li>When the player wins, the LED remains gold</li>
+        <li>After winning, the game resets and begins again</li>
+      </ul>
+
+      <p>We favored this concept because it was a simple game with an intuitive title that required minimal explanation.</p>
+
+      <p>After settling on our concept, we created a simple flowchart to guide our programming process.</p>
+
+      <p>We initially planned to use mob programming on a large display so everyone could contribute simultaneously. However, we encountered technical difficulties with the display.</p>
+
+      <p>As a workaround, all four team members gathered around a single laptop to develop the code. This approach proved challenging as it limited true team collaboration.</p>
+
+      <p>After our lunch break, we made some adjustments to the code and modified the colors to improve the game experience.</p>
+
+      <p>Following a successful presentation of our project, we had the opportunity to see the creative ideas implemented by the other groups.</p>
+    </div>
+    <h4>Flowchart</h4>
+    <div class="image-container">
+      <img ngSrc="/assets/flowchart_catch_the_golden_light.jpg" alt="Project Flowchart" class="flowchart-image"
+           height="1081" width="837">
+    </div>
+    <h5>Pictures</h5>
+    <div class="image-container">
+      <img src="/assets/catch_the_light_1.jpeg" alt="Catch The Light Project Image 1" class="project-image">
+    </div>
+    <div class="image-container">
+      <img src="/assets/catch_the_light_2.jpeg" alt="Catch The Light Project Image 2" class="project-image" fill>
+    </div>
+  </main>
+</div>

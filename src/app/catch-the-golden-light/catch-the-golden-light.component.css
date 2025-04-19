@@ -37,6 +37,36 @@ h3 {
   margin-bottom: 30px;
 }
 
+h4 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+h5 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.flowchart-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
 .text-content {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -44,4 +74,11 @@ h3 {
 
 p {
   margin-bottom: 20px;
+}
+
+.pdf-container {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
 }

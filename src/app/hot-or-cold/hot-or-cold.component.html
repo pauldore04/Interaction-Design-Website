@@ -1,0 +1,84 @@
+<div class="container">
+  <header>
+    <h1 [routerLink]="['/']" class="site-title">Interaction Design</h1>
+  </header>
+
+  <main class="content">
+    <h2>Sensor Experiment</h2>
+    <div class="text-content">
+      <p>Using a ESP32 Microcontroller, 1 Sensor of your choice, 1 (RGB)-LED and your individual Code,
+        your group should create an interesting / fun / engaging interactive system.</p>
+      <p>Group: Frithjof Plath, Tristan Meyne, Paul Doré</p>
+    </div>
+    <h3>Documentation</h3>
+    <div class="text-content">
+      <p>Our first idea was to build a small basketball hoop and use a light barrier or ultrasonic sensor to detect when
+        a ball passed through the hoop. We ultimately rejected this concept as it had already been implemented in another
+        course.</p>
+
+      <p>We then searched through available components for possible inputs, trying to find an unconventional switch
+        or interaction method.</p>
+
+      <h4>Secondary Concepts</h4>
+      <p>Our second concept was inspired by the "Red Light, Green Light" game:</p>
+      <ul>
+        <li>A touch sensor would detect input</li>
+        <li>When the light shows green, players must tap repeatedly to move forward</li>
+        <li>When the light turns red, players must stop immediately</li>
+        <li>If movement is detected during a red light, the player loses</li>
+      </ul>
+
+      <p>We also considered a reaction game where the lamp would light up on one of four sides of a joystick,
+        and the player would need to move in the opposite direction.</p>
+
+      <h4>Final Concept: Hot and Cold with Joystick</h4>
+      <p>We ultimately settled on a "Hot and Cold" game using a joystick:</p>
+      <ul>
+        <li>The player navigates to find a hidden target position</li>
+        <li>As they get closer to the target, the LED becomes brighter and more red (hot)</li>
+        <li>As they move away, the LED becomes more blue (cold)</li>
+        <li>Pressing the joystick button starts a new game, with the LED briefly flashing green</li>
+        <li>When a player reaches the target (wins), the LED flashes red</li>
+        <li>If a player reaches the edge of the playing field, the LED flashes blue</li>
+      </ul>
+
+      <h4>Technical Implementation</h4>
+      <p>During assembly, we initially thought we had fried the ESP32 microcontroller, but later discovered we had
+        accidentally connected ground to 5V.</p>
+
+      <p>While Tristan worked on connecting the ESP32 with PlatformIO, Paul and Frithjof assembled the hardware components.</p>
+
+      <p>We set up Teleplot to have a serial plotter in Visual Studio Code. After getting the serial plotter working,
+        we could visualize both X and Y values from the joystick.</p>
+
+      <p>We determined the joystick's value ranges:</p>
+      <ul>
+        <li>Center position (no movement): 2400</li>
+        <li>Minimum value: 0</li>
+        <li>Maximum value: 3671</li>
+      </ul>
+
+      <p>We programmed a graphical representation to help us visualize the joystick's current position while developing.</p>
+
+      <h4>Learning Break</h4>
+      <p>During development, we had a lecture on the history of Interaction Design. The most interesting part was about
+        pigeons being trained to target enemy boats – essentially an early predecessor to training intelligence for
+        specific tasks.</p>
+
+      <h4>Final Refinements (Friday, April 11)</h4>
+      <p>From 10:00 to 11:30, we had time to make final adjustments to our project. After user testing, we implemented
+        several changes:</p>
+      <ol>
+        <li>We modified the difficulty selection to appear after each game instead of only at the beginning</li>
+        <li>We changed the winning light indicator from green to flashing orange/red, which made more sense contextually
+          (since players are trying to find the "warmest" spot, or brightest red)</li>
+        <li>We made aesthetic improvements to our web application</li>
+      </ol>
+
+      <p>We then presented our project and received positive feedback. Before the critique and reflection session,
+        we observed the other groups' presentations.</p>
+    </div>
+    <h4>Flowchart</h4>
+    <h5>Pictures</h5>
+  </main>
+</div>
