@@ -6,7 +6,6 @@ import {NgOptimizedImage} from '@angular/common';
   selector: 'app-hot-or-cold',
   imports: [
     RouterLink,
-    NgOptimizedImage
   ],
   templateUrl: './hot-or-cold.component.html',
   styleUrl: './hot-or-cold.component.css'
