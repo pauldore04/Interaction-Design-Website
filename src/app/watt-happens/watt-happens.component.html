@@ -4,6 +4,95 @@
   </header>
 
   <main class="content">
-    <h2>Task</h2>
+    <h2>Final Interaction Project</h2>
+    <div class="text-content">
+      <p>Now it’s time to combine it all. Using what you learned about Interaction so far, your groups will create an
+        interactive system of your choice. You’re free to use any sensors and actuators that will help you to create an
+        artistic, experimental, engaging, fun, helpful, idiosyncratic, interesting, … Interaction.</p>
+      <p>Group: Frithjof Plath, Hendrik Weber, Tristan Meyne, Paul Doré</p>
+    </div>
+    <div class="text-content">
+      <h4>Documentation</h4>
+      <p>We began with a brainstorming session to generate fresh ideas. Each team member wrote down concepts individually, and then we presented them to each other without immediate criticism.</p>
+
+      <p>Several intriguing ideas emerged around "anti-design" concepts that would provoke user curiosity through unconventional interactions:</p>
+      <ul>
+        <li>Inserting a fork into an electrical outlet to trigger an effect</li>
+        <li>Pouring water over electronics</li>
+        <li>Placing aluminum foil in a microwave</li>
+        <li>Dropping a toaster into a bathtub</li>
+      </ul>
+
+      <p>The fork-in-socket idea initially caught our attention, but we struggled with determining an appropriate contextual response or feedback mechanism. What clever outcome could happen after the user performs this action?</p>
+
+      <p>Another concept involved a breadboard with cables that users would rearrange. Each time they moved a cable, words would light up saying: "please don't rearrange!"</p>
+
+      <h4>Concept Refinement</h4>
+      <p>After presenting our ideas and receiving feedback, we were encouraged not to overthink the output of the fork interaction but instead to focus on creating an engaging activation method that plays with users' fear-excitement response.</p>
+
+      <p>We ultimately decided on the fork concept, designing it as a small interaction/game that could be used multiple times:</p>
+      <ul>
+        <li>The user inserts a fork into an outlet</li>
+        <li>Either a light blinks green (indicating they "haven't lost") or yellow (indicating they've "lost")</li>
+        <li>A probability determines the outcome</li>
+        <li>Like Russian roulette, the suspense increases with each successful attempt, creating tension about whether the next user will lose</li>
+      </ul>
+
+      <h4>Implementation</h4>
+      <p>We created a flowchart to visualize the program flow and divided our team to make the most of our limited time:</p>
+      <ul>
+        <li>Frith and Hendrik focused on the physical box: layout, component fit, design, and completion</li>
+        <li>Tristan and Paul handled the electronics and code</li>
+      </ul>
+
+      <p>As the electronics team, our first milestone was to make a light turn on when inserting a fork into the socket. We bent back the two middle prongs of the fork and provisionally attached two cables to the back of the socket, creating a simple switch that could quickly activate an LED.</p>
+
+      <p>With the input mechanism and basic output working, we moved on to more complex effects:</p>
+
+      <p><strong>Smoke/Steam Effect</strong>: For when the user loses, we wanted to create rising smoke/steam. This required Frith and Hendrik to design the box with space for a small water reservoir that wouldn't damage the electronics. We found a tube to thread through the box for water refills. The steam module proved difficult to operate due to closely soldered components that sometimes caused short circuits when the buzzer wires touched. Julius helped by resoldering the wires and using hot glue to prevent contact between them.</p>
+
+      <p><strong>Vibration Motor</strong>: This required 5V, which the ESP32 couldn't directly provide, so we added a relay to achieve the necessary voltage. The vibration motor proved surprisingly powerful, requiring secure attachment.</p>
+
+      <p><strong>Additional Components</strong>: We added a buzzer, two yellow LEDs, and one green LED to complete the experience.</p>
+
+      <h4>Integration</h4>
+      <p>The breadboard became quite messy with all the wiring. To keep track of connections, we created a circuit diagram, though its helpfulness was questionable.</p>
+
+      <p>Tristan completed the game code by the end of the day, leaving us with the task of integrating everything into the box the next morning.</p>
+
+      <p>The teams collaborated to fit all components into the box. Since the vibration motor was quite powerful, we soldered as many connections as possible to ensure durability and reliability.</p>
+
+      <p>I was responsible for the soldering. We began by gluing/soldering the outputs in the box, planning to simply insert the breadboard later, as we didn't have time to solder everything from the breadboard as well.</p>
+
+      <p>In the end, we managed to fit everything into the box, close it up, and, fortunately, it all still worked.</p>
+
+      <p>We concluded the course with a final presentation that went very well, followed by viewing the presentations from the other groups.</p>
+    </div>
+    <h4>Flowchart</h4>
+    <div class="image-container">
+      <img ngSrc="/assets/flowchart_watt_happens.jpg" alt="Project Flowchart" class="flowchart-image" height="200" width="1239">
+    </div>
+    <h5>Pictures</h5>
+    <div class="video-container">
+      <video controls class="project-video">
+        <source src="assets/watt_happens_pictures/wh2.mp4" type="video/mp4">
+        Your browser does not support the video tag
+      </video>
+    </div>
+    <div class="image-container">
+      <img ngSrc="/assets/watt_happens_pictures/wh1.jpeg" alt="Picture" class="project-image" height="200" width="1239">
+    </div>
+    <div class="image-container">
+      <img ngSrc="/assets/watt_happens_pictures/wh3.jpeg" alt="Picture" class="project-image" height="200" width="1239">
+    </div>
+    <div class="image-container">
+      <img ngSrc="/assets/watt_happens_pictures/wh4.jpeg" alt="Picture" class="project-image" height="200" width="1239">
+    </div>
+    <div class="video-container">
+      <video controls class="project-video">
+        <source src="/assets/watt_happens_pictures/wh5.mp4" type="video/mp4">
+        Your browser does not support the video tag
+      </video>
+    </div>
   </main>
 </div>

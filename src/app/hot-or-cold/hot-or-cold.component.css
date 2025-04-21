@@ -27,6 +27,20 @@ header {
   margin: 0 auto;
 }
 
+.image-container {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -52,4 +66,25 @@ h5 {
 
 p {
   margin-bottom: 20px;
+}
+
+.flowchart-image {
+  max-width: 100%;
+  height: auto;
+  display: inline-block; /* Changed from block to inline-block */
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.video-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.project-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
