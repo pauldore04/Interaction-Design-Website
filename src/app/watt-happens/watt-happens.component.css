@@ -44,6 +44,10 @@ h5 {
   font-size: 2rem;
   margin-bottom: 30px;
 }
+h6 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
 
 .text-content {
   font-size: 1.1rem;
@@ -87,4 +91,11 @@ p {
   display: block;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.pdf-container {
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
 }
